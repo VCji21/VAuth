@@ -48,17 +48,3 @@ Acceptance:
 
 - [ ] VAuth acts as an OIDC provider, not only a central login API.
 - [ ] External apps can integrate using standard OAuth/OIDC flows.
-
-
-
-## Create repository and push to github
-```
-git init
-git add .
-git commit -m "Pushing VAuth v1"
-git branch -M main
-git remote add origin https://github.com/VCji21/VAuth.git
-git push -u origin main
-```
-
-git config --global core.safecrlf false

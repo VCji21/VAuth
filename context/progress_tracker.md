@@ -526,6 +526,7 @@ Use this table to record commands run and outcomes.
 | 2026-07-29 | `npm.cmd run build` at repo root | Passed | API, auth-client, and web production builds pass on Next 16.2.12. |
 | 2026-07-29 | Manual external credential rotation | Passed | User confirmed exposed real credentials from prior env examples/notes/chat/log contexts were rotated manually in external systems. No credential values were recorded. |
 | 2026-07-29 | Manual live Google OAuth browser verification | Passed | User confirmed Google OAuth works end to end in a browser with approved Google Cloud credentials and callback URL. No credential values were recorded. |
+| 2026-07-29 | Root `README.md` documentation update | Passed | Expanded the root README into first-stop documentation covering VAuth purpose, setup, usage, API surface, consumer integration, security model, and current limitations. |
 
 ## 9. Review Notes
 
