@@ -1,0 +1,16 @@
+
+> web@0.1.0 dev
+> next dev --port 3000
+
+▲ Next.js 16.2.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.206.100.165:3000
+- Environments: .env
+✓ Ready in 1522ms
+Creating turbopack project {
+  dir: 'E:\\Coding\\Web Dev\\AgenticDevelopment\\youtube\\VAuth\\mono_auth\\apps\\web',
+  testMode: true
+}
+
+✓ Compiled in 251ms
+[?25h

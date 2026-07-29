@@ -14,6 +14,7 @@ node_modules
 
 # Testing
 coverage
+dist-test
 
 # Turbo
 .turbo
@@ -36,3 +37,9 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# Normalize all text files to LF in the repo and match the OS on checkout
+* text=auto
+
+# Explicitly force bash scripts to always use LF (even on Windows)
+*.sh text eol=lf

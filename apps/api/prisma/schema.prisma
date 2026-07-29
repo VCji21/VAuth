@@ -1,0 +1,202 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String     @id @default(cuid())
+  email     String     @unique
+  name      String?
+  status    UserStatus @default(ACTIVE)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  credentials        Credential[]
+  externalAccounts   ExternalAccount[]
+  memberships        AppMembership[]
+  refreshTokens      RefreshToken[]
+  oauthCallbackCodes OAuthCallbackCode[]
+  auditLogs          AuditLog[]
+}
+
+model Credential {
+  id           String   @id @default(cuid())
+  userId       String
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId])
+}
+
+model ExternalAccount {
+  id                String        @id @default(cuid())
+  userId            String
+  provider          OAuthProvider
+  providerAccountId String
+  email             String?
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model ClientApp {
+  id               String    @id @default(cuid())
+  name             String
+  slug             String    @unique
+  clientId         String    @unique
+  clientSecretHash String?
+  allowedOrigins   String[]
+  redirectUris     String[]
+  status           AppStatus @default(ACTIVE)
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  roles              Role[]
+  permissions        Permission[]
+  memberships        AppMembership[]
+  refreshTokens      RefreshToken[]
+  oauthCallbackCodes OAuthCallbackCode[]
+  auditLogs          AuditLog[]
+}
+
+model AppMembership {
+  id        String   @id @default(cuid())
+  userId    String
+  appId     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user  User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  app   ClientApp  @relation(fields: [appId], references: [id], onDelete: Cascade)
+  roles UserRole[]
+
+  @@unique([userId, appId])
+}
+
+model Role {
+  id          String   @id @default(cuid())
+  appId       String
+  name        String
+  description String?
+  isSystem    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  app         ClientApp        @relation(fields: [appId], references: [id], onDelete: Cascade)
+  users       UserRole[]
+  permissions RolePermission[]
+
+  @@unique([appId, name])
+}
+
+model Permission {
+  id          String   @id @default(cuid())
+  appId       String
+  action      String
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  app   ClientApp        @relation(fields: [appId], references: [id], onDelete: Cascade)
+  roles RolePermission[]
+
+  @@unique([appId, action])
+}
+
+model UserRole {
+  id           String @id @default(cuid())
+  membershipId String
+  roleId       String
+
+  membership AppMembership @relation(fields: [membershipId], references: [id], onDelete: Cascade)
+  role       Role          @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  @@unique([membershipId, roleId])
+}
+
+model RolePermission {
+  id           String @id @default(cuid())
+  roleId       String
+  permissionId String
+
+  role       Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@unique([roleId, permissionId])
+}
+
+model RefreshToken {
+  id        String    @id @default(cuid())
+  userId    String
+  appId     String
+  tokenHash String
+  familyId  String
+  revokedAt DateTime?
+  expiresAt DateTime
+  createdAt DateTime  @default(now())
+
+  user User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  app  ClientApp @relation(fields: [appId], references: [id], onDelete: Cascade)
+
+  @@index([userId, appId])
+  @@index([familyId])
+}
+
+model OAuthCallbackCode {
+  id          String    @id @default(cuid())
+  userId      String
+  appId       String
+  codeHash    String
+  redirectUri String
+  consumedAt  DateTime?
+  expiresAt   DateTime
+  createdAt   DateTime  @default(now())
+
+  user User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  app  ClientApp @relation(fields: [appId], references: [id], onDelete: Cascade)
+
+  @@unique([codeHash])
+  @@index([userId, appId])
+  @@index([expiresAt])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  appId     String?
+  event     String
+  ipAddress String?
+  userAgent String?
+  metadata  Json?
+  createdAt DateTime @default(now())
+
+  user User?      @relation(fields: [userId], references: [id], onDelete: SetNull)
+  app  ClientApp? @relation(fields: [appId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([appId])
+  @@index([event])
+}
+
+enum UserStatus {
+  ACTIVE
+  DISABLED
+}
+
+enum AppStatus {
+  ACTIVE
+  DISABLED
+}
+
+enum OAuthProvider {
+  GOOGLE
+}

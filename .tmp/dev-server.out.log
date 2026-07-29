@@ -1,0 +1,250 @@
+
+> mono_auth@0.0.0 dev
+> turbo run dev
+
+
+   • Packages in scope: @repo/auth-client, @repo/eslint-config, @repo/typescript-config, @repo/ui, api, web
+   • Running dev in 6 packages
+   • Remote caching disabled
+
+api:dev: cache bypass, force executing 6a0ae9f38577b2fd
+@repo/auth-client:build: cache hit, replaying logs 49cd596c72b4108e
+@repo/auth-client:build: 
+@repo/auth-client:build: > @repo/auth-client@0.1.0 build
+@repo/auth-client:build: > tsc
+@repo/auth-client:build: 
+web:dev: cache bypass, force executing f710bea45bc61575
+api:dev: 
+api:dev: > api@0.0.1 dev
+api:dev: > nest start --watch
+api:dev: 
+web:dev: 
+web:dev: > web@0.1.0 dev
+web:dev: > next dev --port 3000
+web:dev: 
+web:dev: ▲ Next.js 16.2.0 (Turbopack)
+web:dev: - Local:         http://localhost:3000
+web:dev: - Network:       http://10.206.100.165:3000
+web:dev: - Environments: .env
+web:dev: ✓ Ready in 1838ms
+api:dev: [2J[3J[H[[90m2:10:28 pm[0m] Starting compilation in watch mode...
+api:dev: 
+web:dev: 
+api:dev: [[90m2:10:40 pm[0m] Found 0 errors. Watching for file changes.
+api:dev: 
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +43ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +3ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAccessControlModule dependencies initialized[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientsModule dependencies initialized[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +2ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mOAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +12ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +5ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAccessControlController {/clients/:clientId}:[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/roles, POST} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/roles, GET} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/roles/:roleId, PATCH} route[39m[38;5;3m +2ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/roles/:roleId, DELETE} route[39m[38;5;3m +2ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/permissions, POST} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/permissions, GET} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/permissions/:permissionId, PATCH} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/permissions/:permissionId, DELETE} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/roles/:roleId/permissions/:permissionId, POST} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/roles/:roleId/permissions/:permissionId, DELETE} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/memberships, GET} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/memberships/:membershipId/roles, PATCH} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:clientId/memberships/:membershipId, DELETE} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signin, POST} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signout, POST} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/me, GET} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClientsController {/clients}:[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients, POST} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients, GET} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:id, GET} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:id, PATCH} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/clients/:id, DELETE} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mOAuthController {/auth}:[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/google, GET} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/google/callback, GET} route[39m[38;5;3m +1ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/oauth/exchange, POST} route[39m[38;5;3m +0ms[39m
+api:dev: [32m[Nest] 5984  - [39m29/07/2026, 2:10:46 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +181ms[39m
+web:dev:  GET / 200 in 1371ms (next.js: 357ms, proxy.ts: 490ms, application-code: 525ms)
+web:dev:  GET /signup 200 in 2.3s (next.js: 2.1s, proxy.ts: 21ms, application-code: 239ms)
+api:dev: [31m[Nest] 5984  - [39m29/07/2026, 2:46:00 pm [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mPrismaClientKnownRequestError: 
+api:dev: Invalid `this.prisma.clientApp.findUnique()` invocation in
+api:dev: E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\src\clients\clients.service.ts:73:45
+api:dev: 
+api:dev:   70 }
+api:dev:   71 
+api:dev:   72 async findActiveByClientId(clientId: string): Promise<ClientApp> {
+api:dev: → 73   const app = await this.prisma.clientApp.findUnique(
+api:dev: 
+api:dev:     at Jr.handleRequestError (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:237:13)
+api:dev:     at Jr.handleAndLogRequestError (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:183:12)
+api:dev:     at Jr.request (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:152:12)
+api:dev: [90m    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+api:dev:     at async a (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\getPrismaClient.ts:1014:24)
+api:dev:     at async ClientsService.findActiveByClientId [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\clients\clients.service.ts:73:17[90m)[39m
+api:dev:     at async AuthService.signUp [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\auth\auth.service.ts:29:17[90m)[39m
+api:dev:     at async E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@nestjs\core[24m\router\router-execution-context.js:47:62
+api:dev:     at async E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@nestjs\core[24m\router\router-proxy.js:9:17 {
+api:dev:   code: [32m'EACCES'[39m,
+api:dev:   meta: {
+api:dev:     modelName: [32m'ClientApp'[39m
+api:dev:   },
+api:dev:   clientVersion: [32m'7.9.1'[39m
+api:dev: }
+web:dev:  POST /signup 200 in 1446ms (next.js: 19ms, proxy.ts: 18ms, application-code: 1409ms)
+web:dev:   └─ ƒ signUpAction({"success":false}, {}) in 1316ms lib/auth/actions.ts
+api:dev: [31m[Nest] 5984  - [39m29/07/2026, 2:46:08 pm [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mPrismaClientKnownRequestError: 
+api:dev: Invalid `this.prisma.clientApp.findUnique()` invocation in
+api:dev: E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\src\clients\clients.service.ts:73:45
+api:dev: 
+api:dev:   70 }
+api:dev:   71 
+api:dev:   72 async findActiveByClientId(clientId: string): Promise<ClientApp> {
+api:dev: → 73   const app = await this.prisma.clientApp.findUnique(
+api:dev: 
+api:dev:     at Jr.handleRequestError (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:237:13)
+api:dev:     at Jr.handleAndLogRequestError (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:183:12)
+api:dev:     at Jr.request (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:152:12)
+api:dev: [90m    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+api:dev:     at async a (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\getPrismaClient.ts:1014:24)
+api:dev:     at async ClientsService.findActiveByClientId [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\clients\clients.service.ts:73:17[90m)[39m
+api:dev:     at async OAuthService.createState [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\oauth\oauth.service.ts:34:17[90m)[39m
+api:dev:     at async OAuthController.start [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\oauth\oauth.controller.ts:43:19[90m)[39m
+api:dev:     at async E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@nestjs\core[24m\router\router-execution-context.js:47:62
+api:dev:     at async E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@nestjs\core[24m\router\router-proxy.js:9:17 {
+api:dev:   code: [32m'EACCES'[39m,
+api:dev:   meta: {
+api:dev:     modelName: [32m'ClientApp'[39m
+api:dev:   },
+api:dev:   clientVersion: [32m'7.9.1'[39m
+api:dev: }
+api:dev: [31m[Nest] 5984  - [39m29/07/2026, 2:46:17 pm [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mPrismaClientKnownRequestError: 
+api:dev: Invalid `this.prisma.clientApp.findUnique()` invocation in
+api:dev: E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\src\clients\clients.service.ts:73:45
+api:dev: 
+api:dev:   70 }
+api:dev:   71 
+api:dev:   72 async findActiveByClientId(clientId: string): Promise<ClientApp> {
+api:dev: → 73   const app = await this.prisma.clientApp.findUnique(
+api:dev: 
+api:dev:     at Jr.handleRequestError (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:237:13)
+api:dev:     at Jr.handleAndLogRequestError (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:183:12)
+api:dev:     at Jr.request (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:152:12)
+api:dev: [90m    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+api:dev:     at async a (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\getPrismaClient.ts:1014:24)
+api:dev:     at async ClientsService.findActiveByClientId [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\clients\clients.service.ts:73:17[90m)[39m
+api:dev:     at async OAuthService.createState [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\oauth\oauth.service.ts:34:17[90m)[39m
+api:dev:     at async OAuthController.start [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\oauth\oauth.controller.ts:43:19[90m)[39m
+api:dev:     at async E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@nestjs\core[24m\router\router-execution-context.js:47:62
+api:dev:     at async E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@nestjs\core[24m\router\router-proxy.js:9:17 {
+api:dev:   code: [32m'EACCES'[39m,
+api:dev:   meta: {
+api:dev:     modelName: [32m'ClientApp'[39m
+api:dev:   },
+api:dev:   clientVersion: [32m'7.9.1'[39m
+api:dev: }
+web:dev: ✓ Compiled in 185ms
+web:dev:  GET /signup 200 in 889ms (next.js: 251ms, proxy.ts: 349ms, application-code: 289ms)
+web:dev:  GET /signup 200 in 410ms (next.js: 14ms, proxy.ts: 12ms, application-code: 384ms)
+web:dev:  GET /signup 200 in 313ms (next.js: 25ms, proxy.ts: 54ms, application-code: 234ms)
+web:dev:  GET /signup 200 in 310ms (next.js: 83ms, proxy.ts: 54ms, application-code: 174ms)
+web:dev:  GET /signup 200 in 308ms (next.js: 147ms, proxy.ts: 53ms, application-code: 107ms)
+api:dev: [31m[Nest] 5984  - [39m29/07/2026, 3:20:15 pm [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mPrismaClientKnownRequestError: 
+api:dev: Invalid `this.prisma.clientApp.findUnique()` invocation in
+api:dev: E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\src\clients\clients.service.ts:73:45
+api:dev: 
+api:dev:   70 }
+api:dev:   71 
+api:dev:   72 async findActiveByClientId(clientId: string): Promise<ClientApp> {
+api:dev: → 73   const app = await this.prisma.clientApp.findUnique(
+api:dev: 
+api:dev:     at Jr.handleRequestError (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:237:13)
+api:dev:     at Jr.handleAndLogRequestError (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:183:12)
+api:dev:     at Jr.request (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\RequestHandler.ts:152:12)
+api:dev: [90m    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+api:dev:     at async a (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@prisma\client[24m\src\runtime\getPrismaClient.ts:1014:24)
+api:dev:     at async ClientsService.findActiveByClientId [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\clients\clients.service.ts:73:17[90m)[39m
+api:dev:     at async AuthService.signUp [90m(E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\[39msrc\auth\auth.service.ts:29:17[90m)[39m
+api:dev:     at async E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@nestjs\core[24m\router\router-execution-context.js:47:62
+api:dev:     at async E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\node_modules\[4m@nestjs\core[24m\router\router-proxy.js:9:17 {
+api:dev:   code: [32m'EACCES'[39m,
+api:dev:   meta: {
+api:dev:     modelName: [32m'ClientApp'[39m
+api:dev:   },
+web:dev:  POST /signup 200 in 1435ms (next.js: 19ms, proxy.ts: 18ms, application-code: 1397ms)
+api:dev:   clientVersion: [32m'7.9.1'[39m
+web:dev:   └─ ƒ signUpAction({"message":"We could not create that account. Try signing in instead.","success":false}, {}) in 1352ms lib/auth/actions.ts
+api:dev: }
+api:dev: [2J[3J[H[[90m3:20:16 pm[0m] File change detected. Starting incremental compilation...
+api:dev: 
+api:dev: ERROR: Access deniedapi:dev: 
+api:dev: ERROR: Access deniedapi:dev: 
+api:dev: node:child_process:1000
+api:dev:     throw err;
+api:dev:     ^
+api:dev: 
+api:dev: Error: Command failed: taskkill /pid 9588 /T /F
+api:dev: ERROR: Access deniedapi:dev: api:dev: 
+api:dev: 
+api:dev:     at genericNodeError (node:internal/errors:985:15)
+api:dev:     at wrappedFn (node:internal/errors:539:14)
+api:dev:     at checkExecSyncError (node:child_process:925:11)
+api:dev:     at execSync (node:child_process:997:15)
+api:dev:     at treeKillSync (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\node_modules\@nestjs\cli\lib\utils\tree-kill.js:7:38)
+api:dev:     at E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\node_modules\@nestjs\cli\actions\start.action.js:92:46
+api:dev:     at Object.onWatchStatusChange (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\node_modules\@nestjs\cli\lib\compiler\watch-compiler.js:82:17)
+api:dev:     at E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\node_modules\typescript\lib\typescript.js:133916:30
+api:dev:     at emitFilesAndReportErrors (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\node_modules\typescript\lib\typescript.js:133737:5)
+api:dev:     at result.afterProgramCreate (E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api\node_modules\typescript\lib\typescript.js:133912:5) {
+api:dev:   status: 1,
+api:dev:   signal: null,
+api:dev:   output: [
+api:dev:     null,
+api:dev:     Buffer(0) [Uint8Array] [],
+api:dev:     Buffer(23) [Uint8Array] [
+api:dev:        69,  82,  82,  79,  82,  58, 32,
+api:dev:        65,  99,  99, 101, 115, 115, 32,
+api:dev:       100, 101, 110, 105, 101, 100, 13,
+api:dev:        13,  10
+api:dev:     ]
+api:dev:   ],
+api:dev:   pid: 20868,
+api:dev:   stdout: Buffer(0) [Uint8Array] [],
+api:dev:   stderr: Buffer(23) [Uint8Array] [
+api:dev:      69,  82,  82,  79,  82,  58, 32,
+api:dev:      65,  99,  99, 101, 115, 115, 32,
+api:dev:     100, 101, 110, 105, 101, 100, 13,
+api:dev:      13,  10
+api:dev:   ]
+api:dev: }
+api:dev: 
+api:dev: Node.js v24.18.0
+api:dev: npm error Lifecycle script `dev` failed with error:
+api:dev: npm error code 1
+api:dev: npm error path E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api
+api:dev: npm error workspace api@0.0.1
+api:dev: npm error location E:\Coding\Web Dev\AgenticDevelopment\youtube\VAuth\mono_auth\apps\api
+api:dev: npm error command failed
+api:dev: npm error command C:\WINDOWS\system32\cmd.exe /d /s /c nest start --watch
+
+ Tasks:    1 successful, 3 total
+Cached:    1 cached, 3 total
+  Time:    1h9m53.301s 
+Failed:    api#dev
+

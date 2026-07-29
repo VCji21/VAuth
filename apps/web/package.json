@@ -8,13 +8,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --max-warnings 0",
-    "check-types": "next typegen && tsc --noEmit"
+    "test": "node --test --experimental-strip-types --experimental-specifier-resolution=node test/*.test.ts",
+    "check-types": "npm run build --workspace @repo/auth-client && next typegen && tsc --noEmit"
   },
   "dependencies": {
+    "@repo/auth-client": "*",
     "@repo/ui": "*",
-    "next": "16.2.0",
+    "jose": "^6.2.4",
+    "lucide-react": "^1.27.0",
+    "next": "^16.2.12",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
